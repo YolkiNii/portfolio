@@ -7,12 +7,39 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    animation: {
+      "fade-in-down": "fade-in-down 2s",
+      "fade-in": "fade-in 1.5s ease-in-out"
+    },
+    keyframes: {
+      "fade-in-down": {
+        from: {
+          opacity: "0",
+          transform: "translateY(-100%)"
+        },
+        to: {
+          opacity: "1",
+          transform: "translateY(0%)"
+        }
       },
+      "fade-in": {
+        "0%": {
+          opacity: "0",
+        },
+        "100%": {
+          opacity: "1"
+        }
+      }
+    },
+    colors: {
+      "cream": "#EBE9E1",
+      "yellow": "#EFB11D",
+      "light-pink": "#FFA2B6",
+      "hot-pink": "#D6536D",
+      "red-orange": "#E43D12",
+      "light-red-orange": "#F7B09D"
+    },
+    extend: {
     },
   },
   plugins: [],
