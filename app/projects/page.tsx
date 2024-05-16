@@ -8,6 +8,7 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             <ProjectCard
+              key={project.projectLink}
               title={project.title}
               subheader={project.subheader}
               demoVideoPath={project.demoVideoPath}
