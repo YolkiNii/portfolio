@@ -49,7 +49,7 @@ export default function Template({
               </div>
               {links.map((link) => {
                 return (
-                  <div className="flex w-full justify-center my-2">
+                  <div key={link.path} className="flex w-full justify-center my-2">
                     <Link
                       key={link.name}
                       href={link.path}
