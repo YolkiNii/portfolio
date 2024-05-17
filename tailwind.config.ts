@@ -39,6 +39,11 @@ const config: Config = {
       "red-orange": "#E43D12",
       "light-red-orange": "#F7B09D"
     },
+    screens: {
+      "sm": {"max": "640px"},
+      "md": {"max": "768px"},
+      "xl": {"max": "1280px"}
+    },
     extend: {
     },
   },

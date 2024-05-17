@@ -50,11 +50,11 @@ const logos = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col grow text-red-orange">
-      <article className="mx-auto my-auto w-9/12">
-        <p className="text-8xl font-bold">YOUKI</p>
-        <p className="text-8xl font-bold indent-24">LEWIS</p>
-        <section className="text-xl font-semibold w-4/6 mx-auto">
+    <main className="flex flex-col grow text-red-orange mx-4">
+      <article className="mx-auto my-auto w-9/12 md:w-full">
+        <p className="text-8xl font-bold md:text-center">YOUKI</p>
+        <p className="text-8xl font-bold indent-24 md:text-center md:indent-0">LEWIS</p>
+        <section className="text-xl font-semibold w-4/6 mx-auto md:w-full">
           <p>
             Entry level software engineer interested in working on frontend/backend/full-stack 
             projects and wanting to learn more to help develop meaningful work.

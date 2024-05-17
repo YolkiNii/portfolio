@@ -16,8 +16,8 @@ const logos = [
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 mb-4 w-10/12">
-      <nav className="flex justify-end space-x-4">
+    <footer className="fixed md:static bottom-0 my-4 w-10/12 md:w-full">
+      <nav className="flex justify-end space-x-4 md:mx-8">
         {logos.map((logo) => {
           return (
             <Link 
